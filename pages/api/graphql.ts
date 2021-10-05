@@ -22,7 +22,7 @@ export default async function handler(req, res) {
   await startServer;
 
   await apolloServer.createHandler({
-    path: "https://nextjs-prisma-graphql-apollo.vercel.app/api/graphql",
+    path: "/api/graphql",
   })(req, res);
 }
 
